@@ -1,6 +1,7 @@
 # Учебный проект «Барбершоп»
 
 * Студент: [Спарт Муллагулов](https://up.htmlacademy.ru/htmlcss/20/user/201545).
+* Наставник: [Анна Лёмина](https://up.htmlacademy.ru/htmlcss/20/user/83874).
 
 ---
 
