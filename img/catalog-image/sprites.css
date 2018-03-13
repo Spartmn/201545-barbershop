@@ -1,0 +1,40 @@
+.product-1, .product-2, .product-3, .product-4, .product-5, .product-6{
+	background: url(sprites.png) no-repeat;
+}
+
+.product-1{
+	background-position: 0 0;
+	width: 220px;
+	height: 165px;
+}
+
+.product-2{
+	background-position: -220px 0;
+	width: 220px;
+	height: 165px;
+}
+
+.product-3{
+	background-position: -440px 0;
+	width: 220px;
+	height: 165px;
+}
+
+.product-4{
+	background-position: -660px 0;
+	width: 220px;
+	height: 165px;
+}
+
+.product-5{
+	background-position: -880px 0;
+	width: 220px;
+	height: 165px;
+}
+
+.product-6{
+	background-position: -1100px 0;
+	width: 220px;
+	height: 165px;
+}
+
