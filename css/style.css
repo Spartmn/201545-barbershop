@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #000000;
+  background-image: url("../img/bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.navigation-top,
+.navigation-users {
+  list-style: none;
+}
+
+.navigation-top a,
+.navigation-users a {
+  color: #ffffff;
+}
+
+.navigation-top a:hover,
+.navigation-top a:focus,
+.navigation-users a:hover,
+.navigation-users a:focus {
+  background-color: #242424;
+}
+
+.preference-list {
+  list-style: none;
+}
+
+.preference-item h3 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.index-columns {
+  color: #000000;
+
+  background-color: #ffffff;
+}
