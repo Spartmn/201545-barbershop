@@ -19,6 +19,20 @@ a {
   text-decoration: none;
 }
 
+.button {
+  font: inherit;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+  border-width: 0;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #663d15;
+
+}
+
 .navigation {
   font-size: 16px;
   line-height: 20px;
@@ -48,13 +62,221 @@ a {
   list-style: none;
 }
 
+.preference-item {
+  text-align: center;
+}
+
 .preference-item h3 {
   font-size: 30px;
   line-height: 42px;
 }
 
+.preference-item h3::after {
+  content: "";
+  float: right;
+  background-image: url("../img/shape.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 29px;
+  height: 29px;
+}
+
 .index-columns {
   color: #000000;
-
+  background-image: url("../img/pattern-light.jpg");
+  background-repeat: repeat;
   background-color: #ffffff;
+}
+
+.news h2,
+.gallery h2,
+.contacts h2,
+.appointment h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.news-list {
+  list-style: none;
+}
+
+.news-item time {
+  text-transform: none;
+}
+
+.gallery-content {
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
+}
+
+.appointment-item input {
+  border-width: 2px;
+  border-color: #000000;
+  border-style: solid;
+}
+
+.appointment-item input:hover,
+.appointment-item input:focus {
+  border-color: #663d15;
+}
+
+/*FOOTER*/
+.main-footer {
+  background-image: url("../img/pattern-dark.jpg");
+  background-repeat: repeat;
+  background-color: #222222;
+}
+
+.footer-info-map {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.social-item-vk::before {
+  content: "";
+  float: left;
+  background-image: url("../img/vk.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000000;
+  width: 43px;
+  height: 43px;
+}
+
+.social-item-vk:hover::before,
+.social-item-vk:focus::before {
+  content: "";
+  float: left;
+  background-image: url("../img/vk-hover.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  width: 43px;
+  height: 43px;
+}
+
+.social-item-fb::before {
+  content: "";
+  float: left;
+  background-image: url("../img/facebook.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000000;
+  width: 43px;
+  height: 43px;
+}
+
+.social-item-fb:hover::before,
+.social-item-fb:focus::before {
+  content: "";
+  float: left;
+  background-image: url("../img/facebook-hover.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  width: 43px;
+  height: 43px;
+}
+
+.social-item-instg::before {
+  content: "";
+  float: left;
+  background-image: url("../img/instagram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000000;
+  width: 43px;
+  height: 43px;
+}
+
+.social-item-instg:hover::before,
+.social-item-instg:focus::before {
+  content: "";
+  float: left;
+  background-image: url("../img/instagram-hover.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  width: 43px;
+  height: 43px;
+}
+
+.footer-copyright .button {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.modal {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.login-page h2 {
+  font-size: 30px;
+}
+
+.login-form input {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000000;
+  text-transform: uppercase;
+
+}
+
+.login-form input::-webkit-input-placeholder {color: #000000;}
+.login-form input::-moz-placeholder {color: #000000;}
+.login-form input:-ms-input-placeholder {color: #000000;}
+
+.login-icon-user {
+  background-image: url("../img/user.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.login-icon-password {
+  background-image: url("../img/lock.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.login-password-info label::before {
+  content: "";
+  float: left;
+  background-image: url("../img/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  border-width: 2px;
+  border-color: #000000;
+  border-style: solid;
+}
+
+.login-password-info a {
+  text-decoration: underline;
+  color: #000000;
+}
+
+.login-password-info a:hover,
+.login-password-info a:focus {
+  color: #663d15;
+}
+
+.modal-close {
+  background-image: url("../img/cross.svg");
+  background-repeat: no-repeat;
+  background-size: 21px 21px;
+  background-color: #ffffff; /*временный*/
+  border-width: 0;
+  filter: invert(1);
 }
