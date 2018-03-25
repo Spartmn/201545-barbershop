@@ -28,6 +28,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+
+}
+
 .button {
   font: inherit;
   text-transform: uppercase;
@@ -42,17 +47,59 @@ a {
 
 }
 
+.header-main {
+  margin-bottom: 85px;
+  min-height: 285px;
+}
+
 .navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
 
+.header-main-logo {
+  order: 2;
+  width: 370px;
+  height: 155px;
+}
+
+.header-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
   background-color: #000000;
+}
+
+.header-navigation-wrapper .container {
+  display: flex;
+}
+
+.container {
+  width: 920px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .navigation-top,
 .navigation-users {
+  display: flex;
+  min-height: 70px;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.navigation-top {
+  width: 540px;
+  height: 70px;
+}
+
+.navigation-users {
+  width: 100px;
+  height: 70px;
 }
 
 .navigation-top a,
@@ -67,17 +114,37 @@ a {
   background-color: #242424;
 }
 
+.preference {
+  width: 100%;
+  margin-bottom: 85px;
+}
+
 .preference-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  height: 170px;
   list-style: none;
 }
 
 .preference-item {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
   text-align: center;
 }
 
 .preference-item h3 {
+  margin: 0;
+  padding: 0;
   font-size: 30px;
   line-height: 42px;
+}
+
+.preference-item p {
+  margin: 0;
+  padding: 0;
 }
 
 .preference-item h3::after {
@@ -91,10 +158,25 @@ a {
 }
 
 .index-columns {
+  display: flex;
+  justify-content: space-between;
+  min-height: 420px;
+  margin-bottom: 35px;
+  padding: 60px 80px;
   color: #000000;
   background-image: url("../img/pattern-light.jpg");
   background-repeat: repeat;
   background-color: #f5f2ef;
+}
+
+.news {
+  width: 380px;
+  min-height: 315px;
+}
+
+.gallery {
+  width: 300px;
+  min-height: 315px;
 }
 
 .news h2,
@@ -116,6 +198,16 @@ a {
 .gallery-content {
   background-color: #cccccc;
   border: 7px solid #ffffff;
+}
+
+.contacts {
+  width: 340px;
+  height: 280px;
+}
+
+.appointment {
+  width: 300px;
+  height: 330px;
 }
 
 .appointment-item input {
@@ -293,9 +385,21 @@ a {
 }
 /*TODO-FOOTER*/
 .main-footer {
+  margin-top: 65px;
+  padding-top: 65px;
   background-image: url("../img/pattern-dark.jpg");
   background-repeat: repeat;
   background-color: #222222;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+.footer-info {
+  width: 320px;
+  margin: 0;
+  margin-right: 80px;
 }
 
 .footer-info-map {
@@ -305,6 +409,11 @@ a {
 
 .footer-social-list {
   list-style: none;
+}
+
+.footer-social {
+  width: 140px;
+  text-align: center;
 }
 
 .social-item-vk::before {
@@ -374,6 +483,13 @@ a {
   background-color: #ffffff;
   width: 43px;
   height: 43px;
+}
+
+.footer-copyright {
+  width: 140px;
+  margin: 0;
+  margin-left: auto;
+  text-align: center;
 }
 
 .footer-copyright .button {

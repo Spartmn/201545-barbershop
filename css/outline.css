@@ -1,0 +1,12 @@
+.outset-red {
+  outline: #ff0000 2px solid;
+}
+
+.outset-green {
+  outline: #00ff00 2px solid;
+}
+
+.outset-blue{
+  outline: #0000ff 2px solid;
+}
+
