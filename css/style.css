@@ -47,12 +47,12 @@ img {
 
 }
 
-.header-main {
+.main-header {
   margin-bottom: 85px;
   min-height: 285px;
 }
 
-.navigation {
+.main-navigation {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,7 +61,7 @@ img {
   color: #ffffff;
 }
 
-.header-main-logo {
+.main-header-logo {
   order: 2;
   width: 370px;
   height: 155px;
