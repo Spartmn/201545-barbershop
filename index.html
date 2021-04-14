@@ -24,8 +24,8 @@
               <li><a href="#">Контакты</a></li>
             </ul>
             <ul class="navigation-users">
-            <li class="login-link"><a class="login-link" href="login.html">Вход</a></li>
-          </ul>
+              <li class="login-link"><a class="login-link" href="login.html">Вход</a></li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -158,8 +158,11 @@
           <input id="user-password" class="login-icon-password" type="password" name="password" placeholder="Пароль">
         </p>
         <p class="login-password-info">
-          <input id="login-password-info" type="checkbox" name="remembor" class="visually-hidden">
-          <label for="login-password-info">Запомните меня</label>
+          <label class="login-checkbox" for="login-password-info">
+            <input id="login-password-info" type="checkbox" name="remembor" class="visually-hidden">
+            <span class="checkbox-indicator"></span>
+          Запомните меня
+          </label>
           <a class="restore" href="#">Я забыл пароль</a>
         </p>
         <button class="button" type="submit">Войти</button>

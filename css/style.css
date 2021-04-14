@@ -35,14 +35,17 @@ img {
 
 .button {
   font: inherit;
+  text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #000000;
-  border-width: 0;
+  border: none;
 }
 
 .button:hover,
-.button:focus {
+.button:focus,
+.button:active {
   background-color: #663d15;
 
 }
@@ -166,7 +169,7 @@ img {
   color: #000000;
   background-image: url("../img/pattern-light.jpg");
   background-repeat: repeat;
-  background-color: #f5f2ef;
+  background-color: #f8f5f2;
 }
 
 .news {
@@ -179,10 +182,7 @@ img {
   min-height: 315px;
 }
 
-.news h2,
-.gallery h2,
-.contacts h2,
-.appointment h2 {
+.index-columns h2 {
   font-size: 30px;
   line-height: 42px;
 }
@@ -211,6 +211,8 @@ img {
 }
 
 .appointment-item input {
+  font: inherit;
+  background-color: transparent;
   border-width: 2px;
   border-color: #000000;
   border-style: solid;
@@ -385,11 +387,13 @@ img {
 }
 /*TODO-FOOTER*/
 .main-footer {
+  color: #ffffff;
   margin-top: 65px;
   padding-top: 65px;
   background-image: url("../img/pattern-dark.jpg");
+  background-position: 0 0;
   background-repeat: repeat;
-  background-color: #222222;
+  background-color: #212121;  
 }
 
 .main-footer .container {
@@ -407,13 +411,23 @@ img {
   text-decoration: underline;
 }
 
-.footer-social-list {
-  list-style: none;
+.footer-info-map:hover,
+.footer-info-map:focus,
+.footer-info-map:active {
+  text-decoration: none;
 }
 
 .footer-social {
   width: 140px;
   text-align: center;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.social-button {
+  color:#ffffff;
 }
 
 .social-item-vk::before {
@@ -504,12 +518,16 @@ img {
 }
 
 .modal {
-  background-color: #ffffff;
+  background-color: #f8f5f2;
+  background-image: url("../img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
   color: #000000;
 }
 
 .login-page h2 {
   font-size: 30px;
+  line-height: 42px;
 }
 
 .login-form input {
@@ -517,7 +535,20 @@ img {
   border-style: solid;
   border-color: #000000;
   text-transform: uppercase;
+}
 
+.login-form input[type="text"], 
+.login-form input[type="password"] {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f8f5f2;
+  border: 2px solid #000000;
+}
+
+.login-form input:focus,
+.login-form input:hover {
+  border-color: #663d15;
 }
 
 .login-form input::-webkit-input-placeholder {color: #000000;}
@@ -554,8 +585,19 @@ img {
   color: #000000;
 }
 
-.login-password-info a:hover,
-.login-password-info a:focus {
+.login-checkbox:focus,
+.login-checkbox:hover {
+  color: #663d15;
+}
+
+.restore {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.restore:hover,
+.restore:focus {
+  text-decoration: none;
   color: #663d15;
 }
 
