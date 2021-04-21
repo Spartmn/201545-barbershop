@@ -451,7 +451,7 @@ a {
   text-decoration: underline;
 }
 
-.breadcrumbs-current a {
+.breadcrumbs-current {
   color: #aba9a7;
 }
 
@@ -486,6 +486,69 @@ a {
 
 .inner-content p {
   margin: 14px 0;
+}
+
+.inner-content table {
+  border-collapse: collapse;
+}
+
+.inner-content td {
+  padding: 10px 15px;
+  border: 2px solid #000000;
+}
+
+.inner-content .big-heading {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 65px;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+
+  background: rgba(255, 45, 82, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+
+.big-heading::before,
+.big-heading::after {
+  content: "";
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 50px;
+  height: 2px;
+  background: #000000;
+}
+
+.big-heading::before {
+  margin-right: 25px;
+}
+
+.big-heading::after {
+  margin-left: 25px;
+}
+
+.custom-list-1 {
+  margin: 14px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.custom-list-1 li {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.custom-list-1 li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  background-color: #000000;
+  transform: rotate(45deg);
 }
 
 /*TODO-INNER-CATALOG*/
