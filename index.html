@@ -25,7 +25,7 @@
             </ul>
             <ul class="navigation-users">
               <li>
-                <a class="login-link" href="login.html">Вход</a>
+                <a class="login-link" href="login.html">Вход</a> <!-- login.html -->
               </li>
             </ul>
           </div>
@@ -98,7 +98,7 @@
             ПН—ПТ: С 10:00 ДО 22:00<br>
             СБ—ВС: С 10:00 ДО 19:00
           </p>
-          <a class="button" href="#">Как проехать</a>
+          <a class="button js-button-map" href="#">Как проехать</a>
           <a class="button" href="#">Обратная связь</a>
         </section>
         <section class="appointment">
@@ -155,11 +155,11 @@
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label class="visually-hidden" for="user-login">Логин</label>
-          <input id="user-login" class="login-icon-user" type="text" name="login" placeholder="Логин">
+          <input id="user-login" class="login-icon-user" type="text" name="login" placeholder="Логин"> <!-- required -->
         </p>
         <p>
           <label class="visually-hidden" for="user-password">Пароль</label>
-          <input id="user-password" class="login-icon-password" type="password" name="password" placeholder="Пароль">
+          <input id="user-password" class="login-icon-password" type="password" name="password" placeholder="Пароль"> <!-- required -->
         </p>
         <p class="login-password-info">
           <label class="login-checkbox" for="login-password-info">
@@ -182,5 +182,7 @@
       <button class="modal-close" type="button">Закрыть</button>
     </section>
     <div class="modal-overlay"></div>
+    
+    <script src="js/modal-login.js"></script>
   </body>
 </html>
