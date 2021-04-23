@@ -1,36 +1,36 @@
-var map_buttom = document.querySelector(".js-button-map");
-var popup_map = document.querySelector(".map");
+var mapbuttom = document.querySelector(".js-button-map");
+var maplink = document.querySelector(".footer-info-map")
+var mappopup = document.querySelector(".map");
 var overlay = document.querySelector(".modal-overlay");
-var close = document.querySelector(".modal-close");
-var login = popup.querySelector("[name=login]");
-var password = popup.querySelector("[name=password]");
-var form = popup.querySelector("form");
-var storage = localStorage.getItem("login");
-map_buttom.addEventListener("click", function(evt) {
+var mapclose = document.querySelector(".close-map");
+
+if (mapbuttom) {
+  mapbuttom.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    mappopup.classList.add("modal-show");
+    overlay.classList.add("modal-show-overlay");
+  })
+}
+
+maplink.addEventListener("click", function(evt) {
   evt.preventDefault();
-  popup_map.classList.add("modal-show");
+  mappopup.classList.add("modal-show");
   overlay.classList.add("modal-show-overlay");
-  if (storage) {
-    login.value = storage;
-    password.focus();
-  }
-  else {
-  login.focus();
-  }
-  console.log(storage);
 })
-close.addEventListener("click", function(evt) {
+
+mapclose.addEventListener("click", function(evt) {
   evt.preventDefault();
-  popup_map.classList.remove("modal-show");
-  popup_map.classList.remove("modal-error");
+  mappopup.classList.remove("modal-show");
+  mappopup.classList.remove("modal-error");
   overlay.classList.remove("modal-show-overlay");
 })
+
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (popup.classList.contains("modal-show")) {
+    if (mappopup.classList.contains("modal-show")) {
       evt.preventDefault();
-      popup.classList.remove("modal-show");
-      popup.classList.remove("modal-error");
+      mappopup.classList.remove("modal-show");
+      mappopup.classList.remove("modal-error");
       overlay.classList.remove("modal-show-overlay");
     }
   }

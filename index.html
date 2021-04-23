@@ -171,18 +171,22 @@
         </p>
         <button class="button" type="submit">Войти</button>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close close-login" type="button">Закрыть</button>
     </section>
 
     <section class="modal map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCUYVKvMkC" 
+        width="766" height="560" frameborder="1" allowfullscreen="true" style="position:relative;">
+      </iframe>
       <p>
         <img class="" src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу: г. САНКТ-ПЕТЕРБУРГ, ул. Б. КОНЮШЕННАЯ, Д. 19/8">
       </p>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close close-map" type="button">Закрыть</button>
     </section>
     <div class="modal-overlay"></div>
     
-    <script src="js/modal-login.js"></script>
+    <script src="js/modal-login.js" type="text/javascript"></script>
+    <script src="js/modal-map.js" type="text/javascript"></script>
   </body>
 </html>

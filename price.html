@@ -18,7 +18,7 @@
                 <li><a href="info.html">Информация</a></li>
                 <li><a href="news.html">Новости</a></li>
                 <li class="site-navigation-current"><a href="price.html">Прайс-лист</a></li>
-                <li><a href="catalog.thml">Магазин</a></li>
+                <li><a href="catalog.html">Магазин</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
             <ul class="navigation-users">
@@ -113,5 +113,45 @@
           </p>
         </div>
     </footer>
+    
+    <section class="modal login-page">
+      <h2>Личный кабинет</h2>
+      <p class="login-description">Введите пожалуйста свой логин и пароль</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input id="user-login" class="login-icon-user" type="text" name="login" placeholder="Логин"> <!-- required -->
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input id="user-password" class="login-icon-password" type="password" name="password" placeholder="Пароль"> <!-- required -->
+        </p>
+        <p class="login-password-info">
+          <label class="login-checkbox" for="login-password-info">
+            <input id="login-password-info" type="checkbox" name="remembor" class="visually-hidden">
+            <span class="checkbox-indicator"></span>
+          Запомните меня
+          </label>
+          <a class="restore" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button" type="submit">Войти</button>
+      </form>
+      <button class="modal-close close-login" type="button">Закрыть</button>
+    </section>
+
+    <section class="modal map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCUYVKvMkC" 
+        width="766" height="560" frameborder="1" allowfullscreen="true" style="position:relative;">
+      </iframe>
+      <p>
+        <img class="" src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу: г. САНКТ-ПЕТЕРБУРГ, ул. Б. КОНЮШЕННАЯ, Д. 19/8">
+      </p>
+      <button class="modal-close close-map" type="button">Закрыть</button>
+    </section>
+    <div class="modal-overlay"></div>
+
+    <script src="js/modal-login.js" type="text/javascript"></script>
+    <script src="js/modal-map.js" type="text/javascript"></script>
   </body>
 </html>

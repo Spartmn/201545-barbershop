@@ -1108,8 +1108,21 @@ a {
 
   width: 766px;
   height: 561px;
-  transform: translate(-50%, -50%);
+  margin-top: -280px;
+  margin-left: -383px;
+  /* transform: translate(-50%, -50%); */
   border: 7px solid white;
+}
+
+.map iframe {
+  border: 0;
+}
+
+.map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .modal-close {
