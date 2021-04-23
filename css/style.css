@@ -392,7 +392,7 @@ a {
 }
 
 .inner-page .main-header {
-  margin-bottom: 55px;
+  margin-bottom: 50px;
   background-color: #000000;
 }
 
@@ -594,8 +594,72 @@ a {
   line-height: 24px;
 }
 
-/*TODO-INNER-CATALOG*/
+/* TODO-INNER-CATALOG */
 
+.inner-catalog {
+  display: flex;
+  margin-top: 50px;
+}
+
+.left-column {  
+  border: 2px solid red;
+}
+
+.product-filter {
+  width: 230px;
+}
+
+.product-made {
+  margin-bottom: 50px;
+}
+
+.product-filter h2 {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.product-filter ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-filter li {
+  margin-left: 40px;
+  margin-bottom: 19px;
+}
+
+.group-list {
+  margin-bottom: 50px;
+}
+
+.group-list label {
+  display: block;
+  margin-bottom: 19px;
+  margin-left: 40px;
+}
+
+.right-column {
+  width: 100%;
+  border: 2px solid yellow;
+}
+
+.product-list {  
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  width: 220px;
+  height: 286px;
+  margin-bottom: 20px;
+
+  border: 2px solid yellowgreen;
+}
+
+
+/* TODO-INNER-CATALOG OLD */
 .filter fieldset {
   border: none;
 }
@@ -884,6 +948,8 @@ a {
   color: #000000;
   background-color: #ffffff;
 }
+
+/**/
 
 /*TODO MODAL*/
 
