@@ -625,9 +625,22 @@ a {
 }
 
 .product-filter li {
-  margin-left: 40px;
+  position: relative;
+  padding-left: 40px;
   margin-bottom: 19px;
 }
+
+.filter-input-checkbox+label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px black solid;
+}
+
+
 
 .group-list {
   margin-bottom: 50px;
