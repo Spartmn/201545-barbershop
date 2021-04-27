@@ -46,40 +46,45 @@
                 <div class="product-made">
                   <h2>Производители:</h2>
                   <ul>
-                    <li class="filter-option">
-                      <label >
-                        <input class="visually-hidden filter-input-checkbox" id="intut-product-1" name="product-1" type="checkbox" checked>
-                      
+                    <li class="filter-option">                      
+                      <input class="visually-hidden filter-input-checkbox" id="input-product-1" name="product-1" type="checkbox" checked>
+                      <label for="input-product-1">
+                        <span></span>
                         Baxter of california
                       </label>
                     </li>
                     <li class="filter-option">
-                      <input class="visually-hidden filter-input-checkbox" id="intut-product-2" name="product-2" type="checkbox" checked>
-                      <label>
+                      <input class="visually-hidden filter-input-checkbox" id="input-product-2" name="product-2" type="checkbox">
+                      <label for="input-product-2">
+                        <span></span>
                         Mr Natty
                       </label> 
                     </li>
-                    <li class="filter-option">
-                      <input class="visually-hidden filter-input-checkbox" id="intut-product-3" name="product-3" type="checkbox" checked>
-                      <label>
+                    <li class="filter-option">                      
+                      <input class="visually-hidden filter-input-checkbox" id="input-product-3" name="product-3" type="checkbox" checked>
+                      <label for="input-product-3">
+                        <span></span>
                         Suavecito
                       </label>
                     </li>
-                    <li class="filter-option">
-                      <input class="visually-hidden filter-input-checkbox" id="intut-product-4" name="product-4" type="checkbox" checked>
-                      <label>
+                    <li class="filter-option">                      
+                      <input class="visually-hidden filter-input-checkbox" id="input-product-4" name="product-4" type="checkbox">
+                      <label for="input-product-4">
+                        <span></span>
                         Malin+Goetz
                       </label>
                     </li>
-                    <li class="filter-option">
-                      <input class="visually-hidden filter-input-checkbox" id="intut-product-5" name="product-5" type="checkbox" checked>
-                      <label>
+                    <li class="filter-option">                      
+                      <input class="visually-hidden filter-input-checkbox" id="input-product-5" name="product-5" type="checkbox">
+                      <label for="input-product-5">
+                        <span></span>
                         Murray's
                       </label>
                     </li>
-                    <li class="filter-option">
-                      <input class="visually-hidden filter-input-checkbox" id="intut-product-6" name="product-6" type="checkbox" checked>
-                      <label>
+                    <li class="filter-option">                      
+                      <input class="visually-hidden filter-input-checkbox" id="input-product-6" name="product-6" type="checkbox" checked>
+                      <label for="input-product-6">
+                        <span></span>
                         American Crew
                       </label>
                     </li>
@@ -88,9 +93,27 @@
                 <div>
                   <h2>Группы товаров:</h2>
                   <div class="group-list">
-                    <label><input class="visually-hidden" type="radio" name="group_product" value="shaving">Бритвенные <br> принадлежности</label>
-                    <label><input class="visually-hidden" type="radio" name="group_product" value="care">Средства для ухода</label>
-                    <label><input class="visually-hidden" type="radio" name="group_product" value="accessories">Аксессуары</label>                
+                    <div class="group-item">
+                      <input class="visually-hidden filter-input-radio" type="radio" name="group_product" id="input-group-1" value="shaving" checked>
+                      <label for="input-group-1">
+                        <span></span>
+                        Бритвенные <br> принадлежности
+                      </label>
+                    </div>
+                    <div class="group-item">
+                      <input class="visually-hidden filter-input-radio" type="radio" name="group_product" id="input-group-2" value="care">
+                      <label for="input-group-2">
+                        <span></span>
+                        Средства для ухода
+                      </label>
+                    </div>
+                    <div class="group-item">
+                      <input class="visually-hidden filter-input-radio" type="radio" name="group_product" id="input-group-3" value="accessories">
+                      <label for="input-group-3">
+                        <span></span>
+                        Аксессуары
+                      </label>
+                    </div>
                   </div>
                 </div>
                 <button class="button">Показать</button>
@@ -98,56 +121,95 @@
             </div>
             <div class="right-column">
               <div class="product-list">
-                <div class="product-item">
-                  <div></div>
+                <div class="product-item">                  
+                  <img src="img/product-1.jpg" alt="Набор для путешествий 'Baxter of California'">
                   <div>
-                    <h3></h3>
-                    <butom></butom>
-                    <butom></butom>
+                    <h4>Набор для путешествий 
+                      <span><br>«Baxter of California»</span>
+                    </h4>
+                    <div class="button-group">
+                      <button class="button button-price">2 900 ₽</button>
+                      <button class="button button-buy">Купить</button>
+                    </div>
                   </div>
                 </div>
                 <div class="product-item">
-                  <div></div>
+                  <img src="img/product-2.jpg" alt="Увлажнияющий кондиционер 'Baxter of California'">
                   <div>
-                    <h3></h3>
-                    <butom></butom>
-                    <butom></butom>
+                    <h4>Набор для путешествий 
+                      <span><br>«Baxter of California»</spa>
+                      </h4>
+                    <div class="button-group">
+                      <button class="button button-price">750 ₽</button>
+                      <button class="button button-buy">Купить</button>
+                    </div>
                   </div>
                 </div>
                 <div class="product-item">
-                  <div></div>
+                  <img src="img/product-3.jpg" alt="Гель для волос 'Suavecito'">
                   <div>
-                    <h3></h3>
-                    <butom></butom>
-                    <butom></butom>
+                    <h4>Гель для волос 
+                      <span><br>«Suavecito»</span>
+                    </h4>
+                    <div class="button-group">
+                      <button class="button button-price">290 ₽</button>
+                      <button class="button button-buy">Купить</button>
+                    </div>
                   </div>
                 </div>
                 <div class="product-item">
-                  <div></div>
+                  <img src="img/product-4.jpg" alt="Глина для укладки волос 'American Crew'">
                   <div>
-                    <h3></h3>
-                    <butom></butom>
-                    <butom></butom>
+                    <h4>Глина для укладки волос 
+                      <span><br>«American Crew»</span>
+                    </h4>
+                    <div class="button-group">
+                      <button class="button button-price">500 ₽</button>
+                      <button class="button button-buy">Купить</button>
+                    </div>
                   </div>
                 </div>
                 <div class="product-item">
-                  <div></div>
+                  <img src="img/product-5.jpg" alt="Гель для волос 'American Crew'">
                   <div>
-                    <h3></h3>
-                    <butom></butom>
-                    <butom></butom>
+                    <h4>Гель для волос 
+                      <span><br>«American Crew»</span>
+                    </h4>
+                    <div class="button-group">
+                      <button class="button button-price">300 ₽</button>
+                      <button class="button button-buy">Купить</button>
+                    </div>
                   </div>
                 </div>
                 <div class="product-item">
-                  <div></div>
+                  <img src="img/product-6.jpg" alt="Набор для бритья 'Baxter of california'">
                   <div>
-                    <h3></h3>
-                    <butom></butom>
-                    <butom></butom>
+                    <h4>Набор для бритья 
+                      <span><br>«Baxter of california»</span>
+                    </h4>
+                    <div class="button-group">
+                      <button class="button button-price">3 900 ₽</button>
+                      <button class="button button-buy">Купить</button>
+                    </div>
                   </div>
                 </div>                
               </div>
-
+              <div class="pagination-box">
+                <ul class="pagination-list">
+                  <li class="pagination-item">
+                    <a href="#">1</a>
+                  </li>
+                  <li class="pagination-item pagination-item-current">
+                    <a>2</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a href="#">3</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a href="#">4</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
